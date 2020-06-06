@@ -143,3 +143,9 @@ form button:hover {
     background: #e1f1ec;
     border:  2px solid #34cb79;
 }
+
+/* evitar que haja click na imagem e no span */
+.items-grid li img,
+.items-grid li span {
+    pointer-events: none;
+}

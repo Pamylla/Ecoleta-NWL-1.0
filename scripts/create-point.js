@@ -58,6 +58,9 @@ for (let item of itemsToCollect) {
 //     console.log(event.target.dataset.id)
 // }
 
+let selectedItems = []
+const collectedItems = document.querySelector("input[name=items]")
+
 function handleSelectedItem(event){
     const itemLi = event.target
 
@@ -66,4 +69,28 @@ function handleSelectedItem(event){
 
     const itemId= itemLi.dataset.id 
 
+    //verfificar se tem itens selecionados, se sim
+    //pegar os itens selecionados
+    const alreadySelected = selectedItems.findIndex( function (item) {
+        const itemFound = item == itemId  //resultado sera true ou false
+        return itemFound
+    })
+
+    //se ja tiver selecionado, tirar da seleção
+    if(alreadySelected >= 0) {
+        //tirar da seleção
+        const filteredItems = selectedItems.filter( function(item) {
+            const itemIsDifferent = item != itemId
+            return itemIsDifferent
+        })
+
+        selectedItems= filteredItems
+
+    } else{ 
+    //se não tiver selecionado, add a seleção
+        selectedItems.push(itemId)   
+     }
+    // atualizar o 'input hidden' com os dados  selecionados
+
+    collectedItems.value= selectedItems
 }

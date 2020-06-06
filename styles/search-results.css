@@ -63,7 +63,6 @@ main .card img {
     height: 150px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
-    object-fit: cover;
 }
 
 main .card h1 {

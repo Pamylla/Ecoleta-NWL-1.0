@@ -1,0 +1,24 @@
+{
+  "name": "Ecoleta-NWL-1.0",
+  "version": "1.0.0",
+  "description": "NLW is a practical week with lots of code, challenges, networking and a single objective: to take you to the next level. Through our method you will learn new tools, learn about new technologies and discover hacks that will boost your career. An online and completely free event that will help you take the next step in your evolution as a dev.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pamylla/Ecoleta-NWL-1.0.git"
+  },
+  "keywords": [],
+  "author": "Pamylla Ostermann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pamylla/Ecoleta-NWL-1.0/issues"
+  },
+  "homepage": "https://github.com/Pamylla/Ecoleta-NWL-1.0#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}

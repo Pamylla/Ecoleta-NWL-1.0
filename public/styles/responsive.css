@@ -23,6 +23,15 @@
         grid-template-columns: 1f;
     }
 
+    #page-create-point .field-group{
+        flex-direction: column;
+    }
+
+    #page-create-point .field-group .field + .field{
+        margin-left: 0;
+    }
+
+
 }
 
 @media (min-width: 1700px) {

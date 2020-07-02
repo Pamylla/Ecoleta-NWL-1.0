@@ -9,5 +9,5 @@ NLW is a practical week with lots of code, challenges, networking and a single o
 
 Ecoleta is a project developed based on international environment week. That aims to connect people to companies that collect specific waste such as light bulbs, batteries, cooking oil, etc.
 
-![imagem](https://github.com/Pamylla/Ecoleta-NWL-1.0/blob/master/assets/home.png)
+![imagem](https://github.com/Pamylla/Ecoleta-NWL-1.0/blob/master/public/assets/home.png)
 

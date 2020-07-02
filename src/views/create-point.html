@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/create-point.css">
     <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/modal.css">
 </head>
 
 <body>
@@ -113,9 +114,16 @@
                 <input type="hidden" name="items">
             </fieldset>
 
-        <button type="submit"> Cadastrar ponto de coleta</button>
+            <button type="submit"> Cadastrar ponto de coleta</button>
 
-    </form>
+        </form>
+    </div>
+
+    
+        {% if saved %}
+            {% include "partials/point-created.html" %}
+        {% endif %}
+
 
     <script src="/scripts/create-point.js"></script>
 </body>

@@ -20,29 +20,34 @@
 
         <main>
 
-            <h4>
-                <strong> {{ count }} Pontos </strong>
-            </h4>
+            {% if count > 0 %}
+            
+                <h4>
+                    <strong> {{ count }} Pontos </strong>
+                </h4>
 
-            <div class="cards">
+                <div class="cards">
 
-                {% for place in places %}                
-                
-                <div class="card">
-                    <img src="{{ place.image }}" alt="Colectoria">
-                    <h1> {{ place.name }}</h1>
-                    <h3>{{ place.items }}</h3>
-                    <p>
-                        {{ place.city }}, {{ place.state }}<br/>
-                        {{ place.address }} <br/>
-                        {{ place.address2 }}
-                    </p>
+                    {% for place in places %}                
+                    
+                    <div class="card">
+                        <img src="{{ place.image }}" alt="Colectoria">
+                        <h1> {{ place.name }}</h1>
+                        <h3>{{ place.items }}</h3>
+                        <p>
+                            {{ place.city }}, {{ place.state }}<br/>
+                            {{ place.address }} <br/>
+                            {{ place.address2 }}
+                        </p>
+                    </div>
+
+                    {% endfor %}
+
                 </div>
-
-                {% endfor %}
-
-
-            </div>
+            
+            {% else %}
+                <h4> <strong>Nenhum</strong> local encontrado</h4>
+            {% endif %}
 
         </main>
     </div>
